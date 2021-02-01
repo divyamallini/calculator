@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>HOME GERMAN</title>
+</head>
+<style>
+
+.mainbox{
+	position: absolute;
+	background:none;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left:0%;
+
+
+}
+@media screen and (max-width: 1024px) {
+    .mainbox {
+        position: absolute;
+        width:60%;
+	    
+	    
+    }
+}
+@media screen and (max-width: 768px) {
+    .mainbox {
+        positionh: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 8vh;
+	    
+    }
+	
+}
+
+.container{
+	position:absolute;
+	width:230px;
+    height:410px;
+    margin:20px auto;
+	border:2px solid black;
+    text-align: center;
+    background-color: black;
+    border-radius:5%;
+    top:18%;
+    left:50%;
+     
+    
+    
+}
+#zero{
+	background-color: grey;
+    border-radius: 45% ;
+    height:50px;
+    width: 100px;
+    font-size:20px;
+     border: none;
+     color: white;
+}
+
+
+#answerstyle{
+	width:90%;
+    height: 50px;
+    font-size: 30px;
+    background-color: black;
+    text-align: right;
+    color: white;
+    border:2px solid black;
+     
+ 
+	
+}
+.butt{
+	background-color: black;
+    width:230px;
+    height:320px;
+
+
+}
+#operator{
+	background-color: silver;
+    border-radius: 50%;
+    height:50px;
+    width: 50px;
+    font-size:20px;
+    border: none;
+
+}
+#operator1{
+	background-color: #FF851B;
+    border-radius:50%;
+    height:50px;
+    width: 50px;
+    font-size:25px;
+    text-align: center;
+    
+    border: none;
+    color: white;
+    
+
+}
+#operator2{
+	background-color: #FF851B;
+    border-radius:50%;
+    height:50px;
+    width: 50px;
+    font-size:20px;
+    text-align: center;
+    
+    border: none;
+    color: white;
+    
+
+}
+#number{
+	background-color: dimgray;
+    border-radius:50%;
+    height:50px;
+    width: 50px;
+    font-size:20px;
+     border: none;
+    color:white;
+
+}
+
+
+</style>
+
+<body>
+
+
+<div class="mainbox">
+
+<div class="container">
+<form name="forms">
+
+
+
+
+
+
+<input type="text" name="answer" id="answerstyle"><br><br>
+
+<div class="butt">
+
+<input type="button" value=" AC " onclick="forms.answer.value = '' " id="operator">
+<input type="button" value=" +/- " onclick="forms.answer.value += '-' " id="operator">
+<input type="button" value=" % " onclick="forms.answer.value += '%' " id="operator">
+<input type="button" value=" ÷ " onclick="forms.answer.value += '/' " id="operator1"><br><br>
+
+
+<input type="button" value=" 7 " onclick="forms.answer.value += '7' " id="number">
+<input type="button" value=" 8 " onclick="forms.answer.value += '8' " id="number">
+<input type="button" value=" 9 " onclick="forms.answer.value += '9' " id="number">
+<input type="button" value=" x " onclick="forms.answer.value += '*' "  id="operator2"><br><br>
+
+
+<input type="button" value=" 4 " onclick="forms.answer.value += '4' " id="number">
+<input type="button" value=" 5 " onclick="forms.answer.value += '5' " id="number">
+<input type="button" value=" 6 " onclick="forms.answer.value += '6' " id="number">
+<input type="button" value=" - " onclick="forms.answer.value += '-' " id="operator2"><br><br>
+
+
+<input type="button" value=" 1 " onclick="forms.answer.value += '1' " id="number">
+<input type="button" value=" 2 " onclick="forms.answer.value += '2' " id="number">
+<input type="button" value=" 3 " onclick="forms.answer.value += '3' " id="number">
+<input type="button" value=" + " onclick="forms.answer.value += '+' " id="operator2"><br><br>
+
+ 
+
+
+
+<input type="button" value=" 0 " onclick="forms.answer.value += '0' " id="zero">
+<input type="button" value=" . " onclick="forms.answer.value += '.' " id="number">
+
+<input type="button" value=" = " onclick="forms.answer.value =eval(forms.answer.value)"  id="operator2"> <br><br>
+
+
+</div>
+</div>
+</div>
+</form>
+
+
+</body>
+</html>
